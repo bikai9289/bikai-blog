@@ -17,7 +17,7 @@ export default function Loading() {
   }
 
   return (
-    <div className="container">
+    <div className="container m-auto">
       <div className="ripple-container">
         <motion.div
           className="ripple"
