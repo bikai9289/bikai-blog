@@ -95,7 +95,7 @@ export default function AboutPage() {
 
         <HorizontalDividingLine fill="#48A6A7" />
 
-        <h3 className="text-indigo-400">当下</h3>
+        <h3 className="text-indigo-400">2025年五月初</h3>
         <p>准备暑期实习的项目和面试八股文...</p>
         <p>闲暇之余看一些Web3相关的东西~</p>
         <p>帮一个开源项目修改了几个拼写错误和几个简单的issue~</p>
@@ -113,6 +113,17 @@ export default function AboutPage() {
           </Link>
         </p>
         <p>这也算是我第一个合并的pr~</p>
+
+        <HorizontalDividingLine fill="#40B2AF" />
+
+        <h3 className="text-indigo-400">2025年的暑假，开始实习</h3>
+        <p>或许这将是第一次没有在深夜玩游戏的暑假(￣∇￣)</p>
+        <p>专注力好像又提高了</p>
+        <p>我爱安静的环境 ~(^ω^)</p>
+        <p>突然发现</p>
+        <p>找🐛和推理还挺像的/(゜▽゜)☆</p>
+        <p>这难道就是我喜欢写代码的原因吗？</p>
+        <p>哥们小时候梦想还是当侦探来着🥹</p>
       </MaxWidthWrapper>
     </motion.div>
   )

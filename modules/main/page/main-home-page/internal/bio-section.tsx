@@ -9,7 +9,7 @@ export default function BioSection() {
       </h1>
       <p>欢迎来到我的博客, 我会在这里记录一些日记或者笔记, 感谢你的到来~</p>
       <p>
-        我是一名喜欢前端开发的大三学
+        我是一名喜欢前端开发的大四学
         <span className="line-through text-pink-500">生</span>
         牲
       </p>
