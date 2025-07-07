@@ -1,6 +1,12 @@
 'use client'
 
 import type { CreateTagDTO } from '@/actions/tags/type'
+import { zodResolver } from '@hookform/resolvers/zod'
+import { TagType } from '@prisma/client'
+import { useMutation, useQueryClient } from '@tanstack/react-query'
+import { useEffect } from 'react'
+import { useForm } from 'react-hook-form'
+import { toast } from 'sonner'
 import {
   createBlogTag,
   createNoteTag,
@@ -31,12 +37,6 @@ import {
   SelectValue,
 } from '@/components/ui/select'
 import { useModalStore } from '@/store/use-modal-store'
-import { zodResolver } from '@hookform/resolvers/zod'
-import { TagType } from '@prisma/client'
-import { useMutation, useQueryClient } from '@tanstack/react-query'
-import { useEffect } from 'react'
-import { useForm } from 'react-hook-form'
-import { toast } from 'sonner'
 
 export default function CreateTagModal() {
   const { modalType, onModalClose } = useModalStore()

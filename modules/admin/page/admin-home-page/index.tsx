@@ -1,9 +1,9 @@
+import * as motion from 'motion/react-client'
 import {
   getRemainingDaysOfYear,
   getTodayDayInfo,
   getYearProgress,
 } from '@/lib/time'
-import * as motion from 'motion/react-client'
 import Greeting from './internal/greeting'
 
 export default function AdminHomePage() {

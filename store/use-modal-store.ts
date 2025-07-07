@@ -1,14 +1,14 @@
 import { create } from 'zustand'
 
-type IModalType =
-  | 'deleteArticleModal'
-  | 'editTagModal'
-  | 'deleteTagModal'
-  | 'createEchoModal'
-  | 'deleteEchoModal'
-  | 'editEchoModal'
-  | 'createTagModal'
-  | null
+type IModalType
+  = | 'deleteArticleModal'
+    | 'editTagModal'
+    | 'deleteTagModal'
+    | 'createEchoModal'
+    | 'deleteEchoModal'
+    | 'editEchoModal'
+    | 'createTagModal'
+    | null
 
 interface IModalStore {
   modalType: IModalType

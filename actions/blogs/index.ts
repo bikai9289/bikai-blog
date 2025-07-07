@@ -1,10 +1,10 @@
 'use server'
 
 import type { ArticleDTO, UpdateArticleDTO } from '@/components/shared/admin-article-edit-page/type'
+import { revalidatePath } from 'next/cache'
 import { prisma } from '@/db'
 import { requireAdmin } from '@/lib/auth'
 import { processor } from '@/lib/markdown'
-import { revalidatePath } from 'next/cache'
 
 export async function createBlog(values: ArticleDTO) {
   await requireAdmin()

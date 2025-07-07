@@ -1,11 +1,11 @@
 'use client'
 
 import type { Dispatch, SetStateAction } from 'react'
+import { Plus, RotateCw, Search } from 'lucide-react'
+import { memo, useRef } from 'react'
 import { Button } from '@/components/ui/button'
 import { Input } from '@/components/ui/input'
 import { useModalStore } from '@/store/use-modal-store'
-import { Plus, RotateCw, Search } from 'lucide-react'
-import { memo, useRef } from 'react'
 
 function EchoSearch({ setQuery }: { setQuery: Dispatch<SetStateAction<string>> }) {
   const { setModalOpen } = useModalStore()

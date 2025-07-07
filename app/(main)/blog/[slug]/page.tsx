@@ -1,10 +1,10 @@
+import { notFound } from 'next/navigation'
 import { getPublishedBlogHTMLBySlug } from '@/actions/blogs'
 import ArticleDisplayPage from '@/components/shared/article-display-page'
 import CommentCard from '@/components/shared/comment-card'
 import HorizontalDividingLine from '@/components/shared/horizontal-dividing-line'
 import ScrollIndicator from '@/components/shared/scroll-indicator'
 import { prisma } from '@/db'
-import { notFound } from 'next/navigation'
 
 export const dynamicParams = true
 

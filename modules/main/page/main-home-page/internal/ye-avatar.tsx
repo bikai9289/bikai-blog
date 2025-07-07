@@ -1,9 +1,9 @@
 'use client'
 
-import avatar from '@/config/img/avatar.webp'
-import { useTransitionTheme } from '@/hooks/use-transition-theme'
 import { motion } from 'motion/react'
 import Image from 'next/image'
+import avatar from '@/config/img/avatar.webp'
+import { useTransitionTheme } from '@/hooks/use-transition-theme'
 
 export default function YeAvatar() {
   const { setTransitionTheme, theme } = useTransitionTheme()

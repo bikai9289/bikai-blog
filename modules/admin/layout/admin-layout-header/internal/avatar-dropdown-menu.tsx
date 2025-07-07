@@ -1,5 +1,7 @@
 'use client'
 
+import { LogOut } from 'lucide-react'
+import { signOut, useSession } from 'next-auth/react'
 import YeYuAvatar from '@/components/shared/yeyu-avatar'
 import {
   DropdownMenu,
@@ -9,8 +11,6 @@ import {
   DropdownMenuSeparator,
   DropdownMenuTrigger,
 } from '@/components/ui/dropdown-menu'
-import { LogOut } from 'lucide-react'
-import { signOut, useSession } from 'next-auth/react'
 
 function AvatarDropdownMenu() {
   const { data: session } = useSession()

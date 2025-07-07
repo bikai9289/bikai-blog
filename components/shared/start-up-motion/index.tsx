@@ -1,6 +1,5 @@
 'use client'
 
-import { INITIAL_WELCOME_TEXT } from '@/config/constant'
 import {
   animate,
   motion,
@@ -8,6 +7,7 @@ import {
   useMotionValueEvent,
 } from 'motion/react'
 import { useEffect } from 'react'
+import { INITIAL_WELCOME_TEXT } from '@/config/constant'
 
 export default function StartUpMotion() {
   const scaleY = useMotionValue(0)

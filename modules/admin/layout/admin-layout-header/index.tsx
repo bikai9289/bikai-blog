@@ -1,10 +1,10 @@
 'use client'
 
+import Link from 'next/link'
+import { usePathname } from 'next/navigation'
 import { Button } from '@/components/ui/button'
 import { ModeToggle } from '@/components/ui/mode-toggle'
 import { getActiveAdminPath } from '@/lib/url'
-import Link from 'next/link'
-import { usePathname } from 'next/navigation'
 import AdminLogo from './internal/admin-logo'
 import AvatarDropdownMenu from './internal/avatar-dropdown-menu'
 

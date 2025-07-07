@@ -1,9 +1,9 @@
 'use client'
 
-import Mandala from '@/config/svg/mandala'
-import { useTransitionTheme } from '@/hooks/use-transition-theme'
 import { motion, useAnimationFrame, useMotionValue } from 'motion/react'
 import { useState } from 'react'
+import Mandala from '@/config/svg/mandala'
+import { useTransitionTheme } from '@/hooks/use-transition-theme'
 
 // * 拖拽两边移动距离阈值，超过触发
 // * 移动端拉不了多少...所以调低点，虽然会让 pc 端很容易触发

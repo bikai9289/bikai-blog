@@ -1,10 +1,10 @@
 'use server'
 
 import type { UpdateTagNameDTO } from './type'
-import { prisma } from '@/db'
-import { requireAdmin } from '@/lib/auth'
 import { TagType } from '@prisma/client'
 import { revalidatePath } from 'next/cache'
+import { prisma } from '@/db'
+import { requireAdmin } from '@/lib/auth'
 
 export async function createBlogTag(tagName: string) {
   await requireAdmin()

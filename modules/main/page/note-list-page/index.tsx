@@ -1,5 +1,5 @@
-import { getAllShowNotes } from '@/actions/notes'
 import * as motion from 'motion/react-client'
+import { getAllShowNotes } from '@/actions/notes'
 import NoteListItem from './internal/note-list-item'
 
 const containerVariants = {

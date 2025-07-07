@@ -1,3 +1,6 @@
+import { TagType } from '@prisma/client'
+import { useMutation, useQueryClient } from '@tanstack/react-query'
+import { toast } from 'sonner'
 import { deleteBlogById } from '@/actions/blogs'
 import { deleteNoteById } from '@/actions/notes'
 import { Button } from '@/components/ui/button'
@@ -9,9 +12,6 @@ import {
   DialogTitle,
 } from '@/components/ui/dialog'
 import { useModalStore } from '@/store/use-modal-store'
-import { TagType } from '@prisma/client'
-import { useMutation, useQueryClient } from '@tanstack/react-query'
-import { toast } from 'sonner'
 
 interface DeleteArticleParams {
   id: number

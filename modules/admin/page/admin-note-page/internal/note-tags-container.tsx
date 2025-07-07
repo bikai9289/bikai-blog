@@ -1,10 +1,12 @@
 'use client'
 
+import type { NoteTag } from '@prisma/client'
+import type { Dispatch, SetStateAction } from 'react'
 import type {
   CarouselApi,
 } from '@/components/ui/carousel'
-import type { NoteTag } from '@prisma/client'
-import type { Dispatch, SetStateAction } from 'react'
+import { motion } from 'motion/react'
+import { useEffect, useState } from 'react'
 import { NoteTagItemToggle } from '@/components/shared/tag-item-toggle'
 import {
   Carousel,
@@ -12,8 +14,6 @@ import {
   CarouselItem,
 } from '@/components/ui/carousel'
 import { cn } from '@/lib/utils'
-import { motion } from 'motion/react'
-import { useEffect, useState } from 'react'
 
 export function NoteTagsContainer({ noteTagList, setSelectedTags }: { noteTagList: NoteTag[], setSelectedTags: Dispatch<SetStateAction<string[]>> }) {
   const [api, setApi] = useState<CarouselApi>()

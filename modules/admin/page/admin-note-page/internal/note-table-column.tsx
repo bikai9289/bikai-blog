@@ -1,10 +1,7 @@
 'use client'
 
-import type { NoteListItem } from '@/actions/notes/type'
 import type { ColumnDef } from '@tanstack/react-table'
-import TagItemBadge from '@/components/shared/tag-item-badge'
-import { Button } from '@/components/ui/button'
-import { prettyDateTime } from '@/lib/time'
+import type { NoteListItem } from '@/actions/notes/type'
 import {
   ArrowDown,
   ArrowUp,
@@ -14,6 +11,9 @@ import {
   TypeIcon,
   Wrench,
 } from 'lucide-react'
+import TagItemBadge from '@/components/shared/tag-item-badge'
+import { Button } from '@/components/ui/button'
+import { prettyDateTime } from '@/lib/time'
 import ActionButtons from './action-buttons'
 import PublishToggleSwitch from './publish-toggle-switch'
 

@@ -1,4 +1,7 @@
 import type { DeleteTagDTO } from '@/actions/tags/type'
+import { TagType } from '@prisma/client'
+import { useMutation, useQueryClient } from '@tanstack/react-query'
+import { toast } from 'sonner'
 import { deleteBlogTagById, deleteNoteTagById } from '@/actions/tags'
 import { Button } from '@/components/ui/button'
 import {
@@ -9,9 +12,6 @@ import {
   DialogTitle,
 } from '@/components/ui/dialog'
 import { useModalStore } from '@/store/use-modal-store'
-import { TagType } from '@prisma/client'
-import { useMutation, useQueryClient } from '@tanstack/react-query'
-import { toast } from 'sonner'
 
 export default function DeleteTagModal() {
   const { modalType, payload, onModalClose } = useModalStore()

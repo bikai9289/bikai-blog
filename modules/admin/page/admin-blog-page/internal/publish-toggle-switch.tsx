@@ -1,8 +1,8 @@
-import { toggleBlogPublishedById } from '@/actions/blogs'
-import { Switch } from '@/components/ui/switch'
 import { useQueryClient } from '@tanstack/react-query'
 import { useState, useTransition } from 'react'
 import { toast } from 'sonner'
+import { toggleBlogPublishedById } from '@/actions/blogs'
+import { Switch } from '@/components/ui/switch'
 
 export default function PublishToggleSwitch({
   blogId,

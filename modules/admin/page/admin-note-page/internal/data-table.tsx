@@ -4,8 +4,16 @@ import type {
   ColumnDef,
   SortingState,
 } from '@tanstack/react-table'
-import { DataTablePagination } from '@/components/shared/pagination'
+import {
+  flexRender,
+  getCoreRowModel,
+  getPaginationRowModel,
+  getSortedRowModel,
+  useReactTable,
+} from '@tanstack/react-table'
 
+import { useState } from 'react'
+import { DataTablePagination } from '@/components/shared/pagination'
 import {
   Table,
   TableBody,
@@ -14,14 +22,6 @@ import {
   TableHeader,
   TableRow,
 } from '@/components/ui/table'
-import {
-  flexRender,
-  getCoreRowModel,
-  getPaginationRowModel,
-  getSortedRowModel,
-  useReactTable,
-} from '@tanstack/react-table'
-import { useState } from 'react'
 
 interface DataTableProps<TData, TValue> {
   columns: ColumnDef<TData, TValue>[]

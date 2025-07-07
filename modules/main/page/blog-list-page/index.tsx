@@ -1,5 +1,5 @@
-import { getAllShowBlogs } from '@/actions/blogs'
 import * as motion from 'motion/react-client'
+import { getAllShowBlogs } from '@/actions/blogs'
 import BlogListItem from './internal/blog-list-item'
 
 const containerVariants = {

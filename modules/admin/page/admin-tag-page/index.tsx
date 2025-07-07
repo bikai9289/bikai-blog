@@ -1,8 +1,8 @@
 'use client'
 
-import { getAllTags, getQueryTags } from '@/actions/tags'
 import { useQuery } from '@tanstack/react-query'
 import { useState } from 'react'
+import { getAllTags, getQueryTags } from '@/actions/tags'
 import TagListTable from './internal/tag-list-table'
 import TagSearch from './internal/tag-search'
 

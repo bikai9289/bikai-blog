@@ -1,8 +1,8 @@
-import HorizontalDividingLine from '@/components/shared/horizontal-dividing-line'
-import MaxWidthWrapper from '@/components/shared/max-width-wrapper'
 import { ArrowDownIcon } from 'lucide-react'
 import * as motion from 'motion/react-client'
 import Link from 'next/link'
+import HorizontalDividingLine from '@/components/shared/horizontal-dividing-line'
+import MaxWidthWrapper from '@/components/shared/max-width-wrapper'
 
 export default function AboutPage() {
   return (

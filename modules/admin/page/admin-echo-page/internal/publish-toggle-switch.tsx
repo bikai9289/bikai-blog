@@ -1,10 +1,10 @@
 'use client'
 
-import { toggleEchoPublishedById } from '@/actions/echos'
-import { Switch } from '@/components/ui/switch'
 import { useQueryClient } from '@tanstack/react-query'
 import { useState, useTransition } from 'react'
 import { toast } from 'sonner'
+import { toggleEchoPublishedById } from '@/actions/echos'
+import { Switch } from '@/components/ui/switch'
 
 export default function PublishToggleSwitch({ echoId, isPublished: initial }: { echoId: number, isPublished: boolean }) {
   const [isPublished, setIsPublished] = useState(initial)

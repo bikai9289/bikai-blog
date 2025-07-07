@@ -1,6 +1,12 @@
 'use client'
 
 import type { UpdateTagNameDTO } from '@/actions/tags/type'
+import { zodResolver } from '@hookform/resolvers/zod'
+import { TagType } from '@prisma/client'
+import { useMutation, useQueryClient } from '@tanstack/react-query'
+import { useEffect } from 'react'
+import { useForm } from 'react-hook-form'
+import { toast } from 'sonner'
 import {
   updateBlogTagById,
   updateNoteTagById,
@@ -24,12 +30,6 @@ import {
 } from '@/components/ui/form'
 import { Input } from '@/components/ui/input'
 import { useModalStore } from '@/store/use-modal-store'
-import { zodResolver } from '@hookform/resolvers/zod'
-import { TagType } from '@prisma/client'
-import { useMutation, useQueryClient } from '@tanstack/react-query'
-import { useEffect } from 'react'
-import { useForm } from 'react-hook-form'
-import { toast } from 'sonner'
 
 export default function EditTagModal() {
   const { modalType, onModalClose, payload } = useModalStore()

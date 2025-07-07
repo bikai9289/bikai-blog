@@ -1,13 +1,13 @@
 'use client'
 
-import MaxWidthWrapper from '@/components/shared/max-width-wrapper'
-import { useIndicatorPosition } from '@/hooks/use-indicator-position'
-import { getActiveMainPath } from '@/lib/url'
-import { cn } from '@/lib/utils'
 import { motion } from 'motion/react'
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
 import { Fragment, useRef } from 'react'
+import MaxWidthWrapper from '@/components/shared/max-width-wrapper'
+import { useIndicatorPosition } from '@/hooks/use-indicator-position'
+import { getActiveMainPath } from '@/lib/url'
+import { cn } from '@/lib/utils'
 
 const RouteList = [
   {

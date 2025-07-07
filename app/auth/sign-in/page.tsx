@@ -1,5 +1,8 @@
 'use client'
 
+import { GithubIcon, RotateCcw } from 'lucide-react'
+import { signIn } from 'next-auth/react'
+import Link from 'next/link'
 import HorizontalDividingLine from '@/components/shared/horizontal-dividing-line'
 import StarsBackground from '@/components/shared/stars-background'
 import { Button } from '@/components/ui/button'
@@ -10,9 +13,6 @@ import {
   CardHeader,
   CardTitle,
 } from '@/components/ui/card'
-import { GithubIcon, RotateCcw } from 'lucide-react'
-import { signIn } from 'next-auth/react'
-import Link from 'next/link'
 
 export default function LoginPage() {
   return (

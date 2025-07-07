@@ -1,8 +1,8 @@
+import { z } from 'zod'
 import {
   ECHO_CONTENT_MAX_LENGTH,
   ECHO_REFERENCE_MAX_LENGTH,
 } from '@/config/constant'
-import { z } from 'zod'
 
 export const CreateEchoSchema = z.object({
   content: z

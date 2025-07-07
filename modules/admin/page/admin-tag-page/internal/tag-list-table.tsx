@@ -1,8 +1,8 @@
 'use client'
 
 import type { Tag } from '@/actions/tags/type'
-import Loading from '@/components/shared/loading'
 import { motion } from 'motion/react'
+import Loading from '@/components/shared/loading'
 import { DataTable } from './data-table'
 import { columns } from './tag-table-column'
 

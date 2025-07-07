@@ -1,12 +1,12 @@
 'use client'
 
 import type { Dispatch, SetStateAction } from 'react'
-import { Button, buttonVariants } from '@/components/ui/button'
-import { Input } from '@/components/ui/input'
-import { cn } from '@/lib/utils'
 import { Plus, RotateCw, Search } from 'lucide-react'
 import Link from 'next/link'
 import { memo, useRef } from 'react'
+import { Button, buttonVariants } from '@/components/ui/button'
+import { Input } from '@/components/ui/input'
+import { cn } from '@/lib/utils'
 
 function BlogSearch({ setQuery }: { setQuery: Dispatch<SetStateAction<string>> }) {
   const inputRef = useRef<HTMLInputElement>(null)

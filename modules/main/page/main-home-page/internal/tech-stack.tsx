@@ -1,6 +1,8 @@
 'use client'
 
 import type { JSX } from 'react'
+import { ArrowDown } from 'lucide-react'
+import { useState } from 'react'
 import GolangSvg from '@/config/svg/golang-svg'
 import NextjsSvg from '@/config/svg/nextjs-svg'
 import ReactSvg from '@/config/svg/reactjs-svg'
@@ -12,8 +14,6 @@ import {
   startConfettiSakura,
 } from '@/lib/animation/particle-effects'
 import { cn } from '@/lib/utils'
-import { ArrowDown } from 'lucide-react'
-import { useState } from 'react'
 
 const techStackSvg: JSX.Element[] = [
   <VueSvg key="vue" />,

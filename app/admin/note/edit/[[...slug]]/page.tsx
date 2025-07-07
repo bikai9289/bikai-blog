@@ -1,8 +1,8 @@
+import { redirect } from 'next/navigation'
 import { getRawNoteBySlug } from '@/actions/notes'
 import { getNoteTags } from '@/actions/tags'
 import AdminArticleEditPage from '@/components/shared/admin-article-edit-page'
 import { requireAdmin } from '@/lib/auth'
-import { redirect } from 'next/navigation'
 
 export default async function Page({
   params,

@@ -1,5 +1,5 @@
-import { getAllPublishedEcho } from '@/actions/echos'
 import * as motion from 'motion/react-client'
+import { getAllPublishedEcho } from '@/actions/echos'
 import BioSection from './internal/bio-section'
 import EchoCard from './internal/echo-card'
 import TechStack from './internal/tech-stack'

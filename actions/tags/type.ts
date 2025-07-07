@@ -1,7 +1,7 @@
 import type { getAllTags } from '@/actions/tags'
-import { TAG_NAME_MAX_LENGTH } from '@/config/constant'
 import { TagType } from '@prisma/client'
 import { z } from 'zod'
+import { TAG_NAME_MAX_LENGTH } from '@/config/constant'
 
 export const CreateTagSchema = z.object({
   tagName: z.string().min(1, { message: '标签名不能为空' }).max(TAG_NAME_MAX_LENGTH, { message: '标签名超出大小限制' }),
